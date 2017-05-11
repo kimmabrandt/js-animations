@@ -10,15 +10,32 @@
   <body>
     <div class="container">
       <h1>Javascript Animations!</h1>
+
       <div id="cont1">
         <button onclick="moveThing()">MOVE!!</button>
         <div id="anim1">
           lala
         </div>
       </div>
+
+      <br>
+
+      <div id="cont2">
+        <h3>CSS Animation</h3>
+        <div class="box">
+          click me
+        </div>
+      </div>
+
     </div>
 
     <script>
+      var box = document.querySelector('.box');
+
+      box.addEventListener('click', function() {
+        box.classList.toggle('move');
+      });
+
       function moveThing() {
         var elem = document.getElementById("anim1");
         var pos = 0;
