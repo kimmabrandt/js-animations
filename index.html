@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Animations</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Comfortaa|Monoton|Nixie+One|Poiret+One|Press+Start+2P|Shrikhand|Cantarell|Playfair+Display+SC:400,400i,700,700i|Lato:100,100i,300,300i,700|Playfair+Display:400i,700i" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline|Megrim|Monoton|Nixie+One" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Javascript Animations!</h1>
+      <div id="cont1">
+        <button onclick="moveThing()">MOVE!!</button>
+        <div id="anim1">
+          lala
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function moveThing() {
+        var elem = document.getElementById("anim1");
+        var pos = 0;
+        var id = setInterval(frame, 5);
+
+        function frame() {
+          if (pos == 450) {
+            clearInterval(id);
+          } else {
+            pos++;
+            elem.style.left = pos + 'px';
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

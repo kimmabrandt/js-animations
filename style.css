@@ -1,0 +1,28 @@
+body {
+  font-family: Bungee Hairline;
+}
+
+h1 {
+  font-family: Bungee Hairline;
+  font-size: 34px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
+#cont1 {
+  background: #f2f2f2;
+  width: 500px;
+  height: 100px;
+  position: relative;
+}
+
+#anim1 {
+  background: #3bc293;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
